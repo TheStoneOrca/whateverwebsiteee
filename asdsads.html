@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="cheese">
+        <label for="User">Username:</label>
+        <input type="text" id="User" name="User" min="0" max="99">
+    </div>
+    <button id="buttoooon">
+        Name
+    </button>
+    <script>
+        const ButtonForUserName = document.getElementById("buttoooon"); <!--const - variable type-->
+
+        ButtonForUserName.addEventListener("click", function(e) { 
+
+            const UserNameValue = document.getElementById("User").value;
+    
+            console.log(UserNameValue);
+            
+            localStorage.setItem("User-Name", UserNameValue);
+        
+            window.location.href = "websitejs.html"
+        });
+    </script>
+    
+    
+</body>
+</html>
+
+

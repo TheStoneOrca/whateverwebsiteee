@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="websitejs.css">
+    <title>    
+        Scavenger SMP HomePage
+    </title>
+    <body>
+        <h1>Welcome to the Scavenger SMP Webpage,</h1> <h1 id="chi"></h1>
+        <hr>
+        <img src="barrier.png" title="Unactive Gem" width="50"> <h2>This is a gem from the Scavenger SMP!</h2>
+        
+    </body>
+</head>
+<body>
+    <script>
+        const usernameofuser = localStorage.getItem("User-Name");
+        document.getElementById('chi').textContent = usernameofuser + "!";
+    </script>
+    
+</body>
+</html>
